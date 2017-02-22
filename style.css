@@ -1,0 +1,17 @@
+.cl1 .active
+{
+
+    z-index:10;
+    display:block;
+}
+
+
+.cl1 li{
+    position: absolute;
+    list-style-type: none; /* Убираем маркеры */
+    z-index:0;
+}
+
+.cl1{
+
+}
