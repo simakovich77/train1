@@ -20,6 +20,7 @@
     function slider()
     {
         var x = document.querySelectorAll(".cl1 li");
+        var y = document.querySelectorAll(".buttons");
 
 
 
@@ -85,11 +86,34 @@
 
     </ul>
 
-</div>
+    <div class="buttons">
 
-<div class="buttons">
+
+        <div class="checked">
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+
 
     </div>
+
+</div>
 
 
 
