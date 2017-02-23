@@ -30,17 +30,19 @@
         if(i==(x.length-1))
         {
             x[i].classList.remove("active");
-            x[0].classList.add("active");
+           x[0].classList.add("active");
+           i=0;
         }
         else {
             x[i].classList.remove("active");
             x[i + 1].classList.add("active");
+            i++;
         }
     }
 
 
 
-i++;
+
 
   }
 
@@ -55,7 +57,7 @@ i++;
 
 
     <ul>
-        <li class="active">
+        <li class ="active">
             <img src="1.jpg" alt="альтернативный текст">
 
         </li>
