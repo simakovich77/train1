@@ -20,7 +20,7 @@
     function slider()
     {
         var x = document.querySelectorAll(".cl1 li");
-        var y = document.querySelectorAll(".buttons");
+        var y = document.querySelectorAll(".buttons div");
 
 
 
@@ -32,11 +32,19 @@
         {
             x[i].classList.remove("active");
            x[0].classList.add("active");
+
+            y[i].classList.remove("checked");
+            y[0].classList.add("checked");
+
            i=0;
         }
         else {
             x[i].classList.remove("active");
             x[i + 1].classList.add("active");
+
+            y[i].classList.remove("checked");
+            y[i + 1].classList.add("checked");
+
             i++;
         }
     }
@@ -49,13 +57,13 @@
 
 
 
-
 </script>
 
 
 <div class="cl1">
 
 
+<div class=".nav1">
 
     <ul>
         <li class ="active">
@@ -84,34 +92,51 @@
         </li>
 
 
+
     </ul>
 
     <div class="buttons">
 
+        <a href="">
+            <div class="checked">
 
-        <div class="checked">
+            </div>
 
-        </div>
+        </a>
 
-        <div>
+        <a href="">
+            <div>
 
-        </div>
+            </div>
+        </a>
 
-        <div>
+        <a href="">
+            <div>
 
-        </div>
+            </div>
+        </a>
 
-        <div>
+        <a href="">
+            <div>
 
-        </div>
+            </div>
+        </a>
 
-        <div>
+        <a href="">
+            <div>
 
-        </div>
-
+            </div>
+        </a>
 
 
     </div>
+
+    
+</div>
+
+<!--
+
+-->
 
 </div>
 

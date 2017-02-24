@@ -1,3 +1,9 @@
+body, html {
+    margin:0px; /*Это хорошая практика обнулять поля и отсупы, т.к. различные браузеры их по разному воспринимают. */
+    padding:0px;
+    text-align:center; /*Выравниваем макет по центру в старых версиях браузеров */
+}
+
 .cl1 .active
 {
 
@@ -7,12 +13,57 @@
 
 
 .cl1 li{
+    top: 0;
+    left: 0;
     position: absolute;
     list-style-type: none; /* Убираем маркеры */
     z-index:0;
 }
 
-.cl1{
+.cl1 {
+    border:1px solid green;
+    margin: 0 auto; /*выравниваем макет по центру в современных браузерах */
+    text-align: center; /*Отменяем tex-align:center заданное в Body. Делаем чтобы весь текст в макете выравнивался по левому краю */
+   width:1000px;
+    height:500px;
+    position: relative;
+}
+
+.buttons
+{
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    z-index: 100;
+}
+
+
+.buttons div{
+
+    background: url("but1.png") no-repeat;
+    height: 24px;
+    width: 24px;
+    padding-top:0px;
+    float:left;
+    z-index:11;
+}
+
+.nav1{
+    height:500px;
+    width:1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons .checked{
+    background: url("but2.png") no-repeat;
 
 }
 
+.buttons a{
+.link a {
+    display: block; /* Ссылка как блочный элемент */
+    text-align: center; /* Выравнивание по центру */
+    height: 100%; /* Высота на весь слой */
+}
+}
